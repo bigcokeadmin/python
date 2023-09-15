@@ -14,6 +14,7 @@ pipeline {
             steps{
                 sh 'pwd'
                 sh 'echo $WORKSPACE'
+                sh 'ls -l $WORKSPACE'
                 // sh 'python3 $workspace/scripts/python-script.py'
             }
         }
