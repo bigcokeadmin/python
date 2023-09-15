@@ -13,7 +13,7 @@ pipeline {
         stage('Run Python Script') {
             steps{
                 sh 'pwd'
-                sh 'echo $workspace'
+                sh 'echo $WORKSPACE'
                 // sh 'python3 $workspace/scripts/python-script.py'
             }
         }
