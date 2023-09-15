@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Run Python Script') {
             steps{
-                sh '$workspace/scripts/python3 python-script.py'
+                sh 'python3 $workspace/scripts/python-script.py'
             }
         }
     }
